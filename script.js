@@ -1,15 +1,5 @@
 const projects = [
     {
-        title: "GymBros - Fitness Tracker Web Application",
-        description:
-            "Collaborated in a 5-person agile team to develop a full-stack fitness tracking web app with user profiles, workout logging, and competitive leaderboards. Designed the relational SQL database schema and implemented Node.js backend integration to connect the frontend with user, workout, and leaderboard data.",
-        technologies:
-            "Node.js, JavaScript, SQL, HTML, CSS",
-        link:
-            "https://github.com/BreHarris0917/gym_Bros#readme"
-    },
-
-    {
         title: "MSAi Manager",
         description:
             "Collaborated in a 5-person team to develop an AI-powered web application for tracking Mandatory Service Announcements. Built a Python data pipeline that processed Cloud Storage asset reports into structured JSON and loaded customer service data into BigQuery. Also implemented JavaScript functionality for organizing MSA notices as New, In Progress, or Dismissed.",
@@ -17,6 +7,16 @@ const projects = [
             "Python, SQL, JavaScript, Google Cloud Storage, BigQuery, JSON",
         link:
             "https://github.com/Alexz3221/MSAi-Manager#readme"
+    },
+    
+    {
+        title: "GymBros - Fitness Tracker Web Application",
+        description:
+            "Collaborated in a 5-person agile team to develop a full-stack fitness tracking web app with user profiles, workout logging, and competitive leaderboards. Designed the relational SQL database schema and implemented Node.js backend integration to connect the frontend with user, workout, and leaderboard data.",
+        technologies:
+            "Node.js, JavaScript, SQL, HTML, CSS",
+        link:
+            "https://github.com/BreHarris0917/gym_Bros#readme"
     }
 ];
 
