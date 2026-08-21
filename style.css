@@ -1,0 +1,271 @@
+:root {
+    --lilac: #b9a1d6;
+    --lilac-dark: #80639f;
+    --background: #faf9fc;
+    --surface: #ffffff;
+    --text: #252329;
+    --muted: #6f6a75;
+    --border: #e8e2ee;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 8%;
+
+    background: rgba(250, 249, 252, 0.95);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a:hover {
+    color: var(--lilac-dark);
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.section {
+    padding: 6rem 8%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-label {
+    margin-bottom: 0.5rem;
+
+    color: var(--lilac-dark);
+
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    line-height: 1.1;
+}
+
+h1 span {
+    color: var(--lilac-dark);
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+p {
+    color: var(--muted);
+}
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 5rem 8%;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.eyebrow {
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+
+.button {
+    display: inline-block;
+
+    padding: 0.8rem 1.4rem;
+
+    background: var(--lilac-dark);
+    color: white;
+
+    border-radius: 8px;
+
+    transition: transform 0.2s ease,
+                background 0.2s ease;
+}
+
+.button:hover {
+    background: #6d528c;
+    transform: translateY(-2px);
+}
+
+.button.secondary {
+    background: transparent;
+    color: var(--lilac-dark);
+    border: 1px solid var(--lilac-dark);
+}
+
+
+.projects-section {
+    background: #f3eef8;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.project-tech {
+    margin: 1rem 0;
+
+    font-size: 0.85rem;
+    color: var(--lilac-dark);
+}
+
+.project-link {
+    color: var(--lilac-dark);
+    font-weight: bold;
+}
+
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.contact-links a {
+    color: var(--lilac-dark);
+    font-weight: bold;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    padding: 2rem 8%;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+@media (max-width: 700px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        gap: 0;
+
+        background: var(--background);
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 1rem 8%;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .section {
+        padding: 4rem 8%;
+    }
+}

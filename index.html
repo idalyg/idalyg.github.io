@@ -1,10 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My GitHub Page</title>
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my website hosted on GitHub Pages.</p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idaly Gomez-Peña | Portfolio</title>
+    <meta name="description" content="Idaly Gomez-Peña Portfolio">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Idaly Gomez-Peña</a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Welcome to my portfolio</p>
+
+                <h1>Hi, I'm <span>Idaly Gomez-Peña</span></h1>
+
+                <p class="hero-description">
+                    I'm a student at the University of Colorado Boulder majoring in Computer Science. 
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button">View Projects</a>
+                    <a href="assets/resume.pdf"
+                       class="button secondary"
+                       target="_blank">
+                        View Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <p class="section-label">About Me</p>
+                <h2>Get to know me</h2>
+                <p>
+                    I'm currently studying and building my skills in web
+                    development and programming. I enjoy learning how
+                    technology works and creating projects that let me
+                    apply what I've learned.
+                </p>
+
+                <p>
+                    This portfolio is a place where I can showcase my
+                    projects, experience, skills, and progress over time.
+                </p>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <p class="section-label">My Work</p>
+                <h2>Projects</h2>
+                <div class="project-grid" id="project-list">
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <div class="container">
+                <p class="section-label">Resume</p>
+                <h2>My Resume</h2>
+                <p>
+                    You can view or download my current resume below.
+                </p>
+                <a href="assets\Resume Gomez-Peña.pdf" target="_blank" class="button">
+                    View Resume
+                </a>
+
+            </div>
+        </section>
+
+
+        <section id="contact" class="section">
+            <div class="container">
+                <p class="section-label">Contact</p>
+                <h2>Let's Connect</h2>
+                <p>
+                    The best way to reach me is through email or one of
+                    the links below.
+                </p>
+                <div class="contact-links">
+
+                    <a href="mailto:idaly.gomezp@gmail.com">
+                        Email
+                    </a>
+
+                    <a href="https://github.com/idalyg" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/idalygp" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>
+            © <span id="current-year"></span> Idaly Gomez-Peña. All rights reserved.
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
