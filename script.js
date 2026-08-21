@@ -66,3 +66,17 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 });
 
 document.getElementById("current-year").textContent = new Date().getFullYear();
+
+const emailLink = document.getElementById("email-link");
+const copyNote = document.getElementById("copy-note");
+
+emailLink.addEventListener("click", (e) => {
+    const email = emailLink.dataset.email;
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(email).catch(() => {});
+    }
+    copyNote.classList.add("visible");
+    setTimeout(() => {
+        copyNote.classList.remove("visible");
+    }, 1500);
+});

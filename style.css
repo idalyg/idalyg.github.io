@@ -70,7 +70,7 @@ a {
 }
 
 .section {
-    padding: 6rem 8%;
+    padding: 3.5rem 8%;
 }
 
 .container {
@@ -79,7 +79,7 @@ a {
 }
 
 .section-label {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.35rem;
 
     color: var(--lilac-dark);
 
@@ -99,7 +99,7 @@ h1 span {
 }
 
 h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 
@@ -107,13 +107,17 @@ p {
     color: var(--muted);
 }
 
+p + p {
+    margin-top: 0.75rem;
+}
+
 .hero {
-    min-height: 85vh;
+    min-height: 60vh;
 
     display: flex;
     align-items: center;
 
-    padding: 5rem 8%;
+    padding: 3rem 8%;
 }
 
 .hero-content {
@@ -126,7 +130,7 @@ p {
 
 .hero-description {
     max-width: 600px;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     font-size: 1.1rem;
 }
 
@@ -134,7 +138,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -171,11 +175,11 @@ p {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .project-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
 
     background: var(--surface);
 
@@ -192,11 +196,11 @@ p {
 }
 
 .project-card h3 {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .project-tech {
-    margin: 1rem 0;
+    margin: 0.6rem 0;
 
     font-size: 0.85rem;
     color: var(--lilac-dark);
@@ -212,7 +216,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .contact-links a {
@@ -222,6 +226,37 @@ p {
 
 .contact-links a:hover {
     text-decoration: underline;
+}
+
+.contact-links a {
+    position: relative;
+}
+
+.copy-note {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translateX(-50%) translateY(4px);
+
+    margin-bottom: 0.4rem;
+    padding: 0.25rem 0.6rem;
+
+    background: var(--text);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: normal;
+    white-space: nowrap;
+
+    border-radius: 6px;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.copy-note.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 
@@ -262,10 +297,10 @@ footer {
     }
 
     .hero {
-        min-height: 75vh;
+        min-height: 55vh;
     }
 
     .section {
-        padding: 4rem 8%;
+        padding: 2.5rem 8%;
     }
 }
