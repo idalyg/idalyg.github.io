@@ -1,5 +1,15 @@
 const projects = [
     {
+    title: "Coral Reef Data Analysis",
+    description:
+        "Analyzed coral reef data using Python to explore patterns and relationships between environmental factors and reef conditions. Performed data cleaning, exploratory data analysis, and statistical analysis to identify trends and visualize findings using graphs and charts.",
+    technologies:
+        "Python, Pandas, Scikit-Learn, NumPy, Matplotlib, Jupyter Notebook",
+    link:
+        "assets/projects/coral-reef-analysis.pdf",
+        "assets/projects/coral-reef-analysis.html"
+    }
+    {
         title: "MSAi Manager",
         description:
             "Collaborated in a 5-person team to develop an AI-powered web application for tracking Mandatory Service Announcements. Built a Python data pipeline that processed Cloud Storage asset reports into structured JSON and loaded customer service data into BigQuery. Also implemented JavaScript functionality for organizing MSA notices as New, In Progress, or Dismissed.",
