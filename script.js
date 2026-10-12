@@ -8,7 +8,8 @@ const projects = [
     link:
         "assets/PortfolioProject1.pdf",
         "assets/Portfolio_Project1.html"
-    }
+    },
+    
     {
         title: "MSAi Manager",
         description:
