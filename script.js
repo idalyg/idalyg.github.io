@@ -6,8 +6,8 @@ const projects = [
     technologies:
         "Python, Pandas, Scikit-Learn, NumPy, Matplotlib, Jupyter Notebook",
     link:
-        "assets/projects/coral-reef-analysis.pdf",
-        "assets/projects/coral-reef-analysis.html"
+        "assets/coral-reef-analysis.pdf",
+        "assets/coral-reef-analysis.html"
     }
     {
         title: "MSAi Manager",
