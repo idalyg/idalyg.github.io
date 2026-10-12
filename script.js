@@ -7,6 +7,7 @@ const projects = [
         "Python, Pandas, Scikit-Learn, NumPy, Matplotlib, Jupyter Notebook",
     link:
         "assets/PortfolioProject1.pdf",
+    notebookLink:
         "assets/Portfolio_Project1.html"
     },
     
