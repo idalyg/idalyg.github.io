@@ -35,18 +35,19 @@ const projects = [
 const projectList = document.getElementById("project-list");
 
 function displayProjects() {
-
     projectList.innerHTML = "";
 
     projects.forEach((project) => {
         const projectCard = document.createElement("article");
         projectCard.classList.add("project-card");
+
         projectCard.innerHTML = `
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <p class="project-tech">
                 ${project.technologies}
             </p>
+
             <a
                 href="${project.link}"
                 target="_blank"
@@ -55,18 +56,19 @@ function displayProjects() {
             >
                 View Project →
             </a>
+
+            ${project.notebookLink ? `
+                <a
+                    href="${project.notebookLink}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                >
+                    View Notebook →
+                </a>
+            ` : ""}
         `;
 
-            <a
-                href="${project.notebookLink}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-link"
-            >
-                View Notebook →
-            </a>
-        `;
-        
         projectList.appendChild(projectCard);
     });
 }
