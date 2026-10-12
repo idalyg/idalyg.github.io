@@ -57,16 +57,14 @@ function displayProjects() {
             </a>
         `;
 
-        ${project.notebookLink ? `
-                <a
-                    href="${project.notebookLink}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="project-link"
-                >
-                    View Notebook →
-                </a>
-            ` : ""}
+            <a
+                href="${project.notebookLink}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-link"
+            >
+                View Notebook →
+            </a>
         `;
         
         projectList.appendChild(projectCard);
